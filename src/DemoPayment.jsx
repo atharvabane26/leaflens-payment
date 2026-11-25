@@ -20,6 +20,10 @@ function DemoPayment() {
 
     async function fetchPaymentDetails() {
       try {
+        if (!token) {
+         throw new Error('Payment token is missing from the URL')
+        }
+
         const data = await getDemoPayment(token)
 
         if (active) {
@@ -150,7 +154,7 @@ function DemoPayment() {
           </div>
         </div>
 
-        <div className="payment-section">
+        <div className="payment-section order-summary">
           <h3>Order Summary</h3>
 
           {order.items.map((item, index) => (
