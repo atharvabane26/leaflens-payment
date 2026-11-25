@@ -1,0 +1,180 @@
+.demo-payment-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f3f7f3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 35px 16px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.demo-payment-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.payment-brand {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.payment-brand span {
+  font-size: 35px;
+}
+
+.payment-brand h1 {
+  color: #247a3c;
+  margin: 8px 0;
+}
+
+.payment-brand p {
+  color: #777;
+  font-size: 14px;
+}
+
+.payment-section {
+  border-top: 1px solid #e5eae5;
+  padding: 18px 0;
+}
+
+.payment-section h3 {
+  color: #263b2b;
+  margin: 0 0 16px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 13px 0;
+  font-size: 14px;
+}
+
+.detail-row span {
+  color: #777;
+  flex: 1;
+}
+
+.detail-row strong {
+  color: #263b2b;
+  text-align: right;
+  max-width: 60%;
+  overflow-wrap: anywhere;
+}
+
+.amount-section {
+  background: #edf7ee;
+  border: 1px solid #cce7d0;
+  border-radius: 14px;
+  text-align: center;
+  padding: 22px 12px;
+  margin: 12px 0 20px;
+}
+
+.amount-section p {
+  color: #55705a;
+  margin: 0;
+}
+
+.amount-section h1 {
+  color: #21843c;
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.amount-section span {
+  font-size: 11px;
+  color: #65846a;
+  letter-spacing: 1px;
+}
+
+.demo-pay-button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 16px;
+  background: #21843c;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.demo-pay-button:hover {
+  background: #176b30;
+}
+
+.demo-pay-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.demo-note {
+  text-align: center;
+  color: #a47727;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 18px;
+}
+
+.payment-error {
+  color: #c62828;
+  background: #ffebee;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.success-card {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #e3f5e7;
+  color: #21843c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin: 0 auto 20px;
+}
+
+.success-card h1 {
+  color: #21843c;
+}
+
+.payment-info {
+  background: #f3f7f3;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 25px;
+  overflow-wrap: anywhere;
+}
+
+.payment-info p {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+  .demo-payment-page {
+    padding: 15px 10px;
+  }
+
+  .demo-payment-card {
+    padding: 20px;
+  }
+}
