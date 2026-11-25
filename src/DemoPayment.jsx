@@ -135,7 +135,7 @@ function DemoPayment() {
           <p>Secure Demo Payment</p>
         </div>
 
-        <div className="payment-section">
+        <div className="payment-section delivery-details">
           <h3>Delivery Details</h3>
 
           <div className="detail-row">
